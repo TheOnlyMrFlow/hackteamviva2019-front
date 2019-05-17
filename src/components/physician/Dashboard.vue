@@ -1,21 +1,21 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-
-    <chart></chart>
+  
+    <v-layout row wrap justify-center>
+        <v-flex xs10 >
+            <patients-list></patients-list>    
+        </v-flex>
+    </v-layout>
     
-    
-  </div>
 </template>
 
 <script>
 
-import Chart from './Chart'
+import PatientsList from './PatientsList'
 
 export default {
   name: 'dashboard',
   components: {
-    Chart
+    PatientsList
   },
   data () {
     return {
@@ -27,21 +27,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-h1, h2 {
-  font-weight: normal;
-}
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #35495E;
-}
 </style>
