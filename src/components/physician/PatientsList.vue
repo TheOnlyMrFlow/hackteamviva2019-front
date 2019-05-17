@@ -120,6 +120,7 @@ export default {
 <style>
 
 .v-menu__content {
+  z-index: 10;
   top: 110% !important;
   left: 0 !important;
 }
