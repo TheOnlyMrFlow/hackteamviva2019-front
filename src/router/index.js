@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import Hello from '@/components/Hello'
-import Home from '@/components/patient/Home'
+import Index from '@/components/patient/Index'
 import Dashboard from '@/components/physician/Dashboard'
 
 Vue.use(Router)
@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/patient',
       name: 'Patient',
-      component: Home
+      component: Index
     },
     {
       path: '/physician',
