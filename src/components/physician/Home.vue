@@ -1,10 +1,19 @@
 <template>
   
+  <div id="physician-home">
+    
     <v-layout row wrap justify-center>
         <v-flex xs10 >
             <patients-list></patients-list>    
         </v-flex>
+
+
+        <v-flex xs10>
+          <router-view class="mt-5"></router-view>
+        </v-flex>
+
     </v-layout>
+  </div>
     
 </template>
 
